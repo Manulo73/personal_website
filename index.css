@@ -1,0 +1,14 @@
+/*
+RULES:
+Title - 32px
+Body - 18px
+Small - 14px
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
