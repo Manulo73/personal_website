@@ -19,7 +19,7 @@
 <body>
     <!-- Introduction section -->
     <!-- Title, description and small nav menu -->
-    <header>
+    <header class="hidden section-hide-div">
         <h1 id="title-name"><b class="primary-bold">Juan</b> Manuel <b class="primary-bold">Romero</b> Gongora</h1>
         <p id="title-desc">&lt;Web Developer and Learner /&gt;</p>
         <nav>
@@ -38,19 +38,21 @@
     <section id="about-me-section">
         <div id="about-me-div" class="hidden section-hide-div">
             <div id="about-me-title">
-                <h1>About Me</h1>
+                <h1 id="about-me-title-text">About Me</h1>
                 <hr />
-                <p>Hello! I'm <b>Juan Romero</b>, a <b>web developer/programmer</b> fascinated by code and I’m currently
+                <p id="about-me-desc">Hello! I'm <b>Juan Romero</b>, a <b>web developer/programmer</b> fascinated by
+                    code and I’m currently
                     studying
                     Software Engineering. Important mentions are:
                 </p>
                 <ul>
-                    <li>Worked with HTML, CSS, JS, Python, C#, MySQL, etc.</li>
-                    <li>Speak Spanish and English fluently.</li>
-                    <li>Studying Software Engineering with 3 certificates, graduating in 2026.</li>
+                    <li id="about-me-li-one">Worked with HTML, CSS, JS, Python, C#, MySQL, etc.</li>
+                    <li id="about-me-li-two">Speak Spanish and English fluently.</li>
+                    <li id="about-me-li-three">Studying Software Engineering with 3 certificates, graduating in 2026.
+                    </li>
                 </ul>
             </div>
-            <img src="defaultprofile.jpg" alt="Photo" />
+            <img src="images/default-profile.jpg" alt="Photo" />
         </div>
     </section>
 
@@ -61,40 +63,45 @@
             <!-- Project 1 -->
             <article class="project-article">
                 <div class="project-article-text">
-                    <h1><b class="primary-bold">Pricing</b> Benchmark <b class="primary-bold">Tool</b></h1>
+                    <h1 id="project-article-title-one"><b class="primary-bold">Pricing</b> Benchmark <b
+                            class="primary-bold">Tool</b></h1>
                     <hr />
-                    <p>Web based application that uses Flask (Python) combined with webscrapping techniques to get the
+                    <p id="project-article-desc-one">Web based application that uses Flask (Python) combined with
+                        webscrapping techniques to get the
                         latest and real result of the searched product. <br />This was developed in a team of 5 members,
                         with me, Juan Romero, being the lead programmer. HTML5, CSS, JavaScript (NodeJS) and Python
                         (Flask/Pywebview/BS4) were used. </p>
                 </div>
-                <img src="" alt="" class="project-article-img">
+                <img src="images/pricing-benchmark-tool.gif" alt="Pricing Benchmark Tool Gif"
+                    class="project-article-img">
             </article>
 
             <!-- Project 2 -->
             <article class="project-article reverse">
                 <div class="project-article-text">
-                    <h1>Website <b class="primary-bold">Showcase</b></h1>
+                    <h1 id="project-article-title-two">Website <b class="primary-bold">Showcase</b></h1>
                     <hr />
-                    <p>Website highly influenced by Razer Inc’s website, made to practice and showcase website design
+                    <p id="project-article-desc-two">Website highly influenced by Razer Inc’s website, made to practice
+                        and showcase website design
                         skills. HTML5, CSS and JavaScript were used.
-                        <br />Link to project: link
                     </p>
+                    <a href="https://manulo73.github.io/website_showcase/" target="_blank">Link -></a>
                 </div>
-                <img src="" alt="" class="project-article-img">
+                <img src="images/website-showcase.gif" alt="Website Showcase Gif" class="project-article-img">
             </article>
 
             <!-- Project 3 -->
             <article class="project-article">
                 <div class="project-article-text">
-                    <h1><b class="primary-bold">Flappy</b> Bird</h1>
+                    <h1 id="project-article-title-three"><b class="primary-bold">Floppy</b> Bird</h1>
                     <hr />
-                    <p>Web based videogame made from cero in a web browser environment.<br />This was done to practice
+                    <p id="project-article-desc-three">Web based videogame made from cero in a web browser
+                        environment.<br />This was done to practice
                         problem solving skills and JavaScript logic. Made with HTML5, CSS and JavaScript.
-                        <br />Link to project: link
                     </p>
+                    <a href="https://manulo73.github.io/floppy_bird/" target="_blank">Link -></a>
                 </div>
-                <img src="" alt="" class="project-article-img">
+                <img src="images/floppy-bird.gif" alt="Floppy Bird Gif" class="project-article-img">
             </article>
         </div>
     </section>
@@ -105,34 +112,69 @@
         <div id="skills-div" class="hidden section-hide-div">
             <!-- Technical skills, such as programming languages, languages and tools -->
             <span class="skill-span" id="technical-skills">
-                <h1><b class="primary-bold">Technical</b> Skills</h1>
+                <h1 id="skills-title-one"><b class="primary-bold">Technical</b> Skills</h1>
                 <hr />
                 <ul>
-                    <li>Web-based programming languages, such as HTML5, CSS, JavaScript, and PHP.</li>
-                    <li>Other programming languages, such as Python, C, C#, Java, and MySQL.</li>
-                    <li>Use of tools like VS Code, MySQL Workbench, and Git.</li>
-                    <li>Speaks Spanish (native) and English fluently.</li>
+                    <li id="skills-li-one-one">Web-based programming languages, such as HTML5, CSS, JavaScript, and PHP.
+                    </li>
+                    <li id="skills-li-one-two">Other programming languages, such as Python, C, C#, Java, and MySQL.</li>
+                    <li id="skills-li-one-three">Use of tools like VS Code, MySQL Workbench, and Git.</li>
+                    <li id="skills-li-one-four">Speaks Spanish (native) and English fluently.</li>
                 </ul>
             </span>
 
             <!-- Personal skills, things I know how to do well, like teamwork, communication, etc -->
             <span class="skill-span" id="personal-skills">
-                <h1><b class="primary-bold">Personal</b> Skills</h1>
+                <h1 id="skills-title-two"><b class="primary-bold">Personal</b> Skills</h1>
                 <hr />
                 <ul>
-                    <li>Teamwork and communication. Experienced presenting in teams to large groups.</li>
-                    <li>Problem-solving.. Solved multiple LeetCode problems, personal and school projects.</li>
-                    <li>Adaptability. Adapted to new tools such as the use of AI in code.</li>
-                    <li>Fast learner!</li>
+                    <li id="skills-li-two-one">Teamwork and communication. Experienced presenting in teams to large
+                        groups.</li>
+                    <li id="skills-li-two-two">Problem-solving.. Solved multiple LeetCode problems, personal and school
+                        projects.</li>
+                    <li id="skills-li-two-three">Adaptability. Adapted to new tools such as the use of AI in coding.
+                    </li>
+                    <li id="skills-li-two-four">Fast learner!</li>
                 </ul>
             </span>
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <!-- Three contact options are presented, including email, github profile and linkedIn -->
     <section id="contact-section">
         <div id="contact-div" class="hidden section-hide-div">
+            <!-- Title -->
+            <h1 id="contact-title">Contact</h1>
+            <hr />
+
+            <!-- Contact info <div> -->
+            <span id="contact-info-span">
+                <!-- Email -->
+                <p id="contact-email"><b class="primary-bold">Email -</b> romerojuan.manulo@gmail.com</p>
+                <!-- Github (link) -->
+                <span class="contact-link-span">
+                    <p><b class="primary-bold">Github -</b></p>
+                    <a href="https://github.com/Manulo73" target="_blank">
+                        https://github.com/Manulo73</a>
+                </span>
+                <!-- LinkedIn (link) -->
+                <span class="contact-link-span" id="contact-linkedIn">
+                    <p><b class="primary-bold">LinkedIn -</b></p>
+                    <a href="https://www.linkedin.com/in/juan-manuel-romero-gongora-416a78271/" target="_blank">
+                        https://www.linkedin.com/in/juan-manuel-romero-gongora-416a78271/</a>
+                </span>
+            </span>
         </div>
     </section>
+
+    <div id="language-select-div">
+        <img src="images/world-icon.png" alt="">
+        <select name="language" id="language-select">
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+        </select>
+    </div>
 </body>
 
 </html>
