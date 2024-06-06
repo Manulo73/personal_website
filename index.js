@@ -118,7 +118,9 @@ const hiddenItems = document.querySelectorAll('.hidden');
 hiddenItems.forEach((el) => observer.observe(el));
 
 // Change language when loaded
-document.addEventListener('DOMContentLoaded', changeLanguage(languageSelect.value));
+document.addEventListener('DOMContentLoaded', function () {
+    changeLanguage(loadLanguage());
+});
 
 // When the <select> tag for the language changes value we change the language of the page
 languageSelect.addEventListener("change", (event) => {
@@ -172,6 +174,8 @@ function changeLanguageEN() {
     // Contact Section
     contactTitle.innerHTML = webpageTextContent.en.contact_title;
     contactEmail.innerHTML = webpageTextContent.en.contact_email;
+    // Update local storage
+    localStorage.setItem("lan", "en");
 }
 
 // Change webpage's content to spanish
@@ -209,4 +213,13 @@ function changeLanguageES() {
     // Contact Section
     contactTitle.innerHTML = webpageTextContent.es.contact_title;
     contactEmail.innerHTML = webpageTextContent.es.contact_email;
+    // Update local storage
+    localStorage.setItem("lan", "es");
+}
+
+function loadLanguage() {
+    let selectedLanguage = localStorage.getItem("lan");
+    if (selectedLanguage == null) selectedLanguage = languageSelect.value;
+    languageSelect.value = selectedLanguage;
+    return selectedLanguage;
 }

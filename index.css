@@ -217,6 +217,7 @@ header nav ul a:hover {
 #about-me-div img {
     width: 250px;
     height: auto;
+    box-shadow: 20px 10px 0px var(--background-color);
 }
 
 @media only screen and (max-width: 650px) {
